@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            <h1 class="name">{{object.name}}</h1>
+            <hr>
+            <div class="datas">
+                <p class="text-muted">
+                    <li class="text-muted">age         :{{ object.age }}</li>
+                    <li class="text-muted">dob         :{{ object.dob }}</li>
+                    <li class="text-muted">sslc        :{{ object.sslc }} </li>
+                    <li class="text-muted">hslc        :{{ object.hslc }}</li>
+                    <li class="text-muted">cgpa        :{{ object.cgpa }}</li>
+                    <li class="text-muted">languages   :{{ object.languages }}</li>
+                    <li class="text-muted">program     :{{ object.program }}</li>
+                    <li class="text-muted">experience  :{{ object.experience }}</li> 
+                    <li class="text-muted">skils       :{{ object.skils }}</li>
+                    <li class="text-muted">Achivements :{{ object.achivements }}</li> 
+                </p>
+            </div>
+        </div>
+    </div>
+    <br>
+</div>
+{% endblock %}
